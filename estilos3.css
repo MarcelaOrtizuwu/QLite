@@ -1,0 +1,278 @@
+*{
+  padding: 0;
+  margin:0;
+}
+
+.icono{
+  width: 45px;
+  height: 40px;
+}
+
+.form{
+  width: 400px;
+  padding: 30px;
+  margin-left: 33%;
+  margin-top: 20px;
+  margin-bottom: 50px ; 
+  font-family: 'calibri';
+  color: black;
+  position: absolute;
+}
+
+.control{
+    width: 94.5%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+}
+
+.sis{
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black;
+}
+
+.form p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form a{
+    color: white;
+    text-decoration: none;
+}
+
+.form a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.form .botonxd{
+    width: 100%;
+    background: #1f53c5;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+nav{
+  background-color: rgba(90, 20, 255, 0.877);
+  width: 250px;
+  height: 186%;
+  left: -250px;
+  position: absolute;
+  transition: all .5s;
+}
+
+input[type="checkbox"]:checked~nav{
+  transform: translateX(250px);
+}
+
+ul{
+  list-style: none;
+  top: 70px;
+  position: absolute;
+  width: 100%;
+}
+
+a{
+  position: relative;
+  display: block;
+  padding: 20px 5px;
+  font-family: 'calibri';
+  font-weight: bold;
+  font-size: 30px;
+}
+
+a:hover{
+  background-color: rgb(176, 224, 230);
+  color: black;
+}
+
+label{
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes cambio {
+  0% {background-image: url('fondos/elfondo.jpg');}
+  33% {background-image: url('fondos/elfondo2.jpg');}
+  66% {background-image: url('fondos/elfondo3.jpg');}
+  100% {background-image: url('fondos/elfondo.jpg');}  
+}
+
+body{
+  background-image: url('fondos/elfondo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  animation-name: cambio;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@font-face {
+  font-family: zapf;
+  src: url(fuentes/zapf-chancery-normal.ttf);
+}
+
+p{
+  text-align:center;
+  color: #141cb8;
+  font-family: 'calibri';
+  font-size: x-large;
+}
+
+h1{
+  text-align:center;
+  color: #141cb8;
+  font-size: 70px;
+  font-family: zapf;
+}
+
+.ashu{
+  width: 80%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-family: zapf;
+  font-size: 18px;
+  color: black;
+}
+
+.abajo{
+  width: 400px;
+  padding: 30px;
+  margin-left: 33%;
+  margin-top: 30%;
+  margin-bottom: 50px ; 
+  font-family: 'calibri';
+  color: black;
+  position: absolute;
+}
+
+.abajo p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.abajo a{
+    color: white;
+    text-decoration: none;
+}
+
+.abajo a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.abajo .botonxd{
+    width: 100%;
+    background: #1f53c5;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.abajo2{
+  width: 400px;
+  padding: 30px;
+  margin-left: 33%;
+  margin-top: 45%;
+  margin-bottom: 50px ; 
+  font-family: 'calibri';
+  color: black;
+  position: absolute;
+}
+
+.abajo2 p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.abajo2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.abajo2 a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.abajo2 .botonxd{
+    width: 100%;
+    background: #1f53c5;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.abajo3{
+  width: 400px;
+  padding: 30px;
+  margin-left: 33%;
+  margin-top: 60%;
+  margin-bottom: 50px ; 
+  font-family: 'calibri';
+  color: black;
+  position: absolute;
+}
+
+.abajo3 p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.abajo3 a{
+    color: white;
+    text-decoration: none;
+}
+
+.abajo3 a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.abajo3 .botonxd{
+    width: 100%;
+    background: #1f53c5;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}

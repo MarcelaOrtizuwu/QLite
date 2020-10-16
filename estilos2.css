@@ -1,0 +1,155 @@
+*{
+	padding: 0;
+}
+
+.icono{
+  width: 45px;
+  height: 40px;
+  margin-top: -45px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+.pppp{
+  color: white;
+  text-decoration: none;
+}
+nav{
+  background-color: rgba(90, 20, 255, 0.87);
+  width: 250px;
+  height: 208.5%;
+  left: -250px;
+  position: absolute;
+  transition: all .5s;
+  margin-top: -45px;
+  z-index: 1;
+}
+
+input[type="checkbox"]:checked~nav{
+  transform: translateX(250px);
+}
+
+.palmenu{
+  list-style: none;
+  top: 70px;
+  position: absolute;
+  width: 100%;
+}
+
+.pppp{
+  position: relative;
+  display: block;
+  padding: 20px 5px;
+  font-family: 'calibri';
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.pppp:hover{
+  background-color: rgb(176, 224, 230);
+  color: black;
+}
+
+label{
+  padding: 15px;
+  position: absolute;
+  z-index: 2;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: separate;
+  border: #8f4f8e 2px solid;
+  text-align:center;
+  color: #141cb8;
+}
+
+@keyframes cambio {
+  0% {background-image: url('fondos/elfondo.jpg');}
+  33% {background-image: url('fondos/elfondo2.jpg');}
+  66% {background-image: url('fondos/elfondo3.jpg');}
+  100% {background-image: url('fondos/elfondo.jpg');}  
+}
+
+body{
+  background-image: url('fondos/elfondo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  animation-name: cambio;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@font-face {
+  font-family: zapf;
+  src: url(fuentes/zapf-chancery-normal.ttf);
+}
+
+p{
+  text-align:center;
+  color: #141cb8;
+  font-family: 'calibri';
+  font-size: x-large;
+}
+
+h1{
+  text-align:center;
+  color: #141cb8;
+  font-family: zapf;
+}
+
+h2{
+  text-align:center;
+  color: #141cb8;
+  font-family: zapf;
+}
+
+.normalito{
+  text-align:center;
+  color: #141cb8;
+  font-family: 'calibri';
+  font-size: x-large;
+}
+
+
+.galeria {
+  height: 600px;
+  width: 1000px;
+  margin:1em auto;
+  border: 1px solid #555;
+  position: relative;  
+  display:inline-block;
+  margin-left: 180px;
+  z-index: 0;
+}
+
+.galeria img {
+  position: absolute;
+  max-width:100%;
+  max-height:100%;
+  vertical-align: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: -610px;
+  left: 46%;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}

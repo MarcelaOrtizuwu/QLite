@@ -1,0 +1,423 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("fondos/bg.jpg");
+    background-color: #4f5152;
+}
+
+.icono{
+    width: 45px;
+    height: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    background-color: rgba(20, 188, 255, 0.829);
+    width: 250px;
+    height: 164.5%;
+    left: -250px;
+    position: absolute;
+    transition: all .5s;
+    z-index: 1;
+}
+
+input[type="checkbox"]:checked~nav{
+    transform: translateX(250px);
+}
+
+ul{
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+a{
+    position: relative;
+    display: block;
+    padding: 20px 5px;
+    font-family: 'calibri';
+    font-weight: bold;
+    font-size: 30px;
+}
+
+a:hover{
+    background-color: rgb(176, 224, 230);
+    color: black;
+}
+
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 2;
+}
+
+.logoprron{
+    margin-top: -350px;
+}
+
+.form{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin-left: 35%;
+    margin-top: -360px;
+    margin-bottom: 50px ; 
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.control{
+    width: 94.5%;
+    background-color: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form a{
+    color: white;
+    text-decoration: none;
+}
+
+.form a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.form .botonxd{
+    width: 100%;
+    background: #1f53c5;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.uwu{
+    text-align: center;
+    height: 20px;
+    margin-top: 90px;
+    width: 98.2%;
+    padding: 12px;
+    background-color: #1e6;
+    color: white;
+    font-family: 'calibri';
+    font-size: 20px;
+}
+
+.unu{
+    text-align: center;
+    height: 20px;
+    margin-top: 90px;
+    width: 98.2%;
+    padding: 12px;
+    background-color: #a22;
+    color: white;
+    font-family: 'calibri';
+    font-size: 20px;
+}
+
+#bg{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#bg img{
+    height: 120vh;
+    width: 105%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#blackLayer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    z-index: 99;
+}
+#main{
+    width: 14.5%;
+    background-color:#0f0f12;
+    border-radius: 15px;
+    position: fixed;
+    top:32%;
+    left: 91.5%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    box-shadow: 0px -2px 12px #34ebcf;
+}
+
+#image img{
+    height: 180px;
+    width: 100%;
+    margin-top: -5px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+#player{
+    padding: 25px;
+    color:#333;
+}
+#songTitle{
+    color: #e6e6f0;
+    width: 150px;
+    text-align: center;
+    font-family: zapf;
+    font-size: 20px;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#buttons{
+    height: 50px;
+    width: 100%;
+    margin-top: 60px;
+    position:relative;
+    top:19%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#play,#next,#pre{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color:#2fdef5;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top:73%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 7px #34ebcf;
+}
+#next{
+    width: 30px;
+    height: 30px;
+    left: 85%;
+}
+#pre{
+    width: 30px;
+    height: 30px;
+    left: 15%;
+}
+#play img,#next img,#pre img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#seek-bar{
+    width: 160px;
+    height: 4px;
+    background-color:#9393ad;
+    display: flex;
+    border-radius: 50px;
+    margin-left: -6px;
+    margin-top: 50%;
+    cursor: pointer;
+}
+#fill{
+    height: 5px;
+    background-color:#42ffb7;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px #daf5f0;
+}
+#handle{
+    width: 8px;
+    height: 8px;
+    background-color:#2fdef5;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+    box-shadow: 0px 0px 3px #34ebcf;
+}
+
+@font-face {
+    font-family: agnetta;
+    src: url(fuentes/agnetta.ttf);
+  }
+
+@font-face{
+    font-family: zapf;
+    src: url(fuentes/zapf-chancery-normal.ttf);
+}
+
+.formsearch{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin-left: 5%;
+    margin-top: -360px;
+    margin-bottom: 50px ; 
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    box-shadow: 7px 13px 37px #000;
+    z-index: 0;
+}
+
+.formdelete{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    height: 300px;
+    margin-left: 45%;
+    margin-top: -360px; 
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formsearch h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.formsearch p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formsearch a{
+    color: white;
+    text-decoration: none;
+}
+
+.formsearch a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.formsearch .botonxd{
+    width: 100%;
+    background: #1f53c5;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.formdelete h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formdelete p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formdelete a{
+    color: white;
+    text-decoration: none;
+}
+
+.formdelete a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.formdelete .botonxd{
+    width: 100%;
+    background: #1f53c5;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.resultado{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin-left: -162.8%;
+    margin-top: 40px;
+    margin-bottom: 50px ; 
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.resultado h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.uwu2{
+    text-align: center;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: -3%;
+    width: 98.2%;
+    padding: 12px;
+    background-color: #1e6;
+    color: white;
+    font-family: 'calibri';
+    font-size: 20px;
+}
+
+.unu2{
+    text-align: center;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: -3%;
+    width: 98.2%;
+    padding: 12px;
+    background-color: #a22;
+    color: white;
+    font-family: 'calibri';
+    font-size: 20px;
+}
+
